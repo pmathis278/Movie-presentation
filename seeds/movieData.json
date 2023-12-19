@@ -1,0 +1,27 @@
+[
+    {
+      "name": "The Incredible Journey",
+      "description": "A tale of adventure and discovery that spans the entire globe.",
+      "image": "the_incredible_journey.jpg"
+    },
+    {
+      "name": "Silent Whispers",
+      "description": "A suspense thriller that will keep you on the edge of your seat.",
+      "image": "silent_whispers.jpg"
+    },
+    {
+      "name": "Laughing in the Rain",
+      "description": "A heartwarming comedy about finding joy in the unexpected.",
+      "image": "laughing_in_the_rain.jpg"
+    },
+    {
+      "name": "Mysteries of the Cosmos",
+      "description": "A science fiction epic that takes viewers to the farthest reaches of space.",
+      "image": "mysteries_of_the_cosmos.jpg"
+    },
+    {
+      "name": "The Last Stand",
+      "description": "An action-packed drama about courage and determination in the face of adversity.",
+      "image": "the_last_stand.jpg"
+    }
+  ]
