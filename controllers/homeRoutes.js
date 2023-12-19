@@ -3,7 +3,7 @@ const {Movie} = require('../models')
 router.get('/', async (req, res) => {
   try {
     const movieData = await Movie.findAll();
-    const Movie = movieData.map((product) => Movie.get({ plain: true }));
+    const Movie = movieData.map((Movie) => Movie.get({ plain: true }));
     //DO THE ABOVE FOR YOUR GAME DATA OR USER DATA IN ORDER TO SHOW WITH HANDLEBARS
 
     res.render('homepage'
