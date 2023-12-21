@@ -13,6 +13,13 @@ const PORT = process.env.PORT || 3001;
 
 const hbs = exphbs.create({  });
 
+app.use(session({
+  secret: 'your secret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: 'auto' }
+}));
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.json());
