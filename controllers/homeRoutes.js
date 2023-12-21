@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const {Movie} = require('../models')
-router.get('/', async (req, res) => {
+const {Movie} = require('../models');
+const Auth = require('../utils/auth');
+router.get('/', Auth, async (req, res) => {
   try {
     const movieData = await Movie.findAll();
     const Movie = movieData.map((Movie) => Movie.get({ plain: true }));
@@ -14,4 +15,12 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/login', Auth, async (req, res) => {
+  try {
+    res.render('login'
+);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;
