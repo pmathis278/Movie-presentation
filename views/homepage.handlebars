@@ -1,9 +1,198 @@
+<style>
+    .homeparent{
+        height: 100vh;
+        width: 100vw;
+    }
+    .header{
+        height: 10vh;
+        width: 100vw;
+        background-color: #FFFFFF;
+    }
+    .contentParent{
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+    }
+    .sidebar{
+        height: 100%;
+        width: 20vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebarHeader{
+        height: 10vh;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 10px solid rgb(232, 227, 219);
+        border-top: 3px solid rgb(232, 227, 219);
+    }
+    .searchInput{
+        height: 5vh;
+        width: 80%;
+        background-color: #FFFFFF;
+        border: none;
+        border-bottom: 1px solid rgb(232, 227, 219);
+        background:rgb(232, 227, 219);
+        border-radius: 5px;
+        outline: none;
+        padding-left: 10px;
+        font-size: 1.5rem;
+        margin: 5px;
+        position: relative;
+        margin-top: 15px;
+    }
+    .searchInputChild{
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    .searchIcon{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-weight: bolder;
+    }
+    .searchIcon:hover{
+        cursor: pointer;
+        color: rgb(232, 185, 171);
+        transition: .3s ease-in-out;
+    }
+    .contentWindow{
+        height: 100%;
+        width: 80vw;
+        background-color: rgb(232, 227, 219);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .movie{
+        height: 150px;
+        width: 100%;
+        background-color: #FFFFFF;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.251);
+        transition: .1s ease-in-out;
+    }
+    .movie:hover{
+        cursor: pointer;
+        transform: scale(1.01);
+        transition: .2s ease-in;
+    }
+    .movieImg{
+        height: 130px;
+        width: 130px;
+        background-color: #000000;
+        text-align: center;
+        object-fit: cover;
+        object-position: center;
+    }
+    .description{
+        text-align: center;
+        width: 80%;
+    }
+    .movieImg{
+        border-radius: 10px;
+    }
+    .movie ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+    }
+    ul li:hover{
+        cursor: pointer;
+        color: rgb(140, 80, 205);
+        transition: .3s ease-in-out;
+    }
+</style>
 <div class="homeparent">
-    <h1>HOME</h1>
-</div>
-<div class="watchlist">
-    <h2>Watchlist</h2>
-</div>
-<div class="movie">
-    <h2>Movie</h2>
+    <div class="header">
+    </div>
+    <div class="contentParent">
+        <div class="sidebar">
+            <div class="sidebarHeader">
+                <h2>I'm a sidebar</h2>
+            </div>
+            <div class="searchInput">
+                <input type="text" class="searchInputChild" placeholder="Search" id="SearchInput">
+                <div class="searchIcon" id="Search">
+                O
+                </div>
+            </div>
+        </div>
+        <div class="contentWindow" id="Content">
+            <div class="movie">
+                <div class="movieImg">
+                    I'm a Pic
+                </div>
+                <div class="description">
+                    Im a description
+                </div>
+                <ul>
+                    <li class="icon">Watch</li>
+                    <li>Favorite</li>
+                    <li>Rate</li>
+                </ul>
+            </div>
+            <div class="movie">
+                <div class="movieImg">
+                    I'm a Pic
+                </div>
+                <div class="description">
+                    Im a description
+                </div>
+                <ul>
+                    <li>Watch</li>
+                    <li>Favorite</li>
+                    <li>Rate</li>
+                </ul>
+            </div>
+            <div class="movie">
+                <div class="movieImg">
+                    I'm a Pic
+                </div>
+                <div class="description">
+                    I'm a description
+                </div>
+                <ul>
+                    <li>Watch</li>
+                    <li>Favorite</li>
+                    <li>Rate</li>
+                </ul>
+            </div>
+            <div class="movie">
+                <div class="movieImg">
+                    I'm a Pic
+                </div>
+                <div class="description">
+                    I'm a description
+                </div>
+                <ul>
+                    <li>Watch</li>
+                    <li>Favorite</li>
+                    <li>Rate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
