@@ -17,7 +17,7 @@ document.querySelector('#signup-form').addEventListener('submit', event => {
     .then(data => {
       console.log(data)
       if (data.success) {
-        window.location.href = '/'; // Redirect to homepage
+        document.location.replace('/');  // Redirect to homepage
       } else {
         console.error('Error:', data.message);
       }
